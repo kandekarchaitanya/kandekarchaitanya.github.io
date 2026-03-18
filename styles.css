@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@400;600;700&display=swap');
 
 :root{
-  --bg:#f2f5f9;
-  --panel:#ffffff;
-  --panel-2:#eef2f7;
-  --text:#1a2a3a;
-  --muted:#6b7c93;
-  --line:#d6e0eb;
+  --bg:#0f1115;
+  --panel:#171a21;
+  --panel-2:#1e222b;
+  --text:#e8eaf0;
+  --muted:#9aa3b2;
+  --line:#2a2f3a;
   --strong-line:#cdbfae;
   --accent:#191714;
   --accent-soft:#ece4d7;
