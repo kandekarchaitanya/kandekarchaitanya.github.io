@@ -1,12 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 760" role="img" aria-label="Profile photo placeholder">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-label="Profile photo placeholder">
   <defs>
-    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#dbeafe"/>
-      <stop offset="100%" stop-color="#eef2ff"/>
+      <stop offset="100%" stop-color="#ede9fe"/>
+    </linearGradient>
+    <linearGradient id="fg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#93c5fd"/>
+      <stop offset="100%" stop-color="#a7f3d0"/>
     </linearGradient>
   </defs>
-  <rect width="640" height="760" rx="36" fill="url(#g)"/>
-  <circle cx="320" cy="240" r="110" fill="#93c5fd" opacity="0.9"/>
-  <path d="M152 612c24-118 108-182 168-182s144 64 168 182" fill="#bfdbfe"/>
-  <text x="320" y="700" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#355070">Replace with your photo</text>
+  <rect width="720" height="900" rx="48" fill="url(#bg)"/>
+  <circle cx="360" cy="285" r="130" fill="url(#fg)" opacity="0.95"/>
+  <path d="M150 690c36-144 124-218 210-218s174 74 210 218" fill="#bfdbfe" opacity="0.95"/>
+  <text x="360" y="808" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" fill="#355070">Replace with your photo</text>
 </svg>
