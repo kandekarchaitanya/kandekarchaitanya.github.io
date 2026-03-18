@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@400;600;700&display=swap');
 
 :root{
-  --bg:#f4f1ea;
-  --panel:#fbf8f2;
-  --panel-2:#f7f3ed;
-  --text:#171511;
-  --muted:#706861;
-  --line:#dfd7cb;
-  --shadow:0 8px 24px rgba(25,23,20,0.05);
+  --bg:#f2f6fb;
+  --panel:#ffffff;
+  --panel-2:#eef3f8;
+  --text:#14202b;
+  --muted:#6b7c8f;
+  --line:#d6e0ea;
+  --shadow:0 8px 24px rgba(20,32,43,0.06);
 }
 
 html[data-theme="dark"]{
