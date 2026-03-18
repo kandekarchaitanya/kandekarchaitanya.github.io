@@ -91,8 +91,8 @@ html[data-theme="dark"] .theme-floating{background:rgba(23,23,23,0.82)}
 }
 
 .photo-wrap{
-  width:178px;
-  height:178px;
+  width:200px;
+  height:200px;
   border-radius:34px;
   overflow:hidden;
   background:linear-gradient(145deg, var(--panel-2), transparent);
