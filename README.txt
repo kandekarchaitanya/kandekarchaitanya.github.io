@@ -1,19 +1,14 @@
-Upload the contents of this folder to your GitHub repository named kandekarchaitanya.github.io
+Apex-inspired academic homepage for GitHub Pages
 
-What is included:
-- polished homepage design
-- dark mode toggle
-- publication cards
-- conference presentation cards
-- downloadable CV button
-- clean redirects for /scholar, /linkedin, and /orcid
+Files to edit most often:
+- index.html               -> content sections, publications, talks
+- styles.css               -> colors, spacing, typography
+- assets/profile-placeholder.svg -> replace with your own profile image if you want
+- cv/Chaitanya_Kandekar_CV.pdf   -> replace with a newer CV later if needed
 
-What to customize:
-1. Replace assets/profile-placeholder.svg with your photo
-2. Optional: edit index.html text if you want to refine your bio or sections
-
-Your live links will be:
-- https://kandekarchaitanya.github.io/
-- https://kandekarchaitanya.github.io/scholar
-- https://kandekarchaitanya.github.io/linkedin
-- https://kandekarchaitanya.github.io/orcid
+This version is inspired by a modern one-page portfolio / resume layout:
+- left sticky profile panel
+- big hero statement
+- numbered sections
+- cleaner cards and tags
+- improved light/dark theme

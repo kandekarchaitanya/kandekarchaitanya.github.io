@@ -3,216 +3,324 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chaitanya Kandekar | Academic Homepage</title>
+  <title>Chaitanya Kandekar | Researcher in Computational Mechanics</title>
   <meta name="description" content="Academic homepage of Chaitanya Kandekar, research associate and doctoral researcher in computational engineering at Helmut-Schmidt University." />
   <link rel="stylesheet" href="styles.css" />
-  <script src="assets/theme.js"></script>
+  <script src="assets/theme.js" defer></script>
 </head>
 <body>
-  <div class="container">
-    <header class="topbar">
-      <div class="brand">Chaitanya Kandekar</div>
-      <div class="nav">
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#research">Research</a>
-          <a href="#publications">Publications</a>
-          <a href="#talks">Talks</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <button class="theme-btn" id="themeToggle" type="button" aria-label="Toggle dark mode">🌙 Dark mode</button>
-      </div>
-    </header>
+  <button class="theme-floating" id="themeToggle" type="button" aria-label="Toggle color theme">
+    <span class="theme-icon">◐</span>
+    <span class="theme-text">Theme</span>
+  </button>
 
-    <section class="hero">
-      <div class="photo-shell">
-        <div class="photo">
-          <img src="assets/CK_27.JPG" alt="Chaitanya Kandekar" />
+  <div class="page-shell">
+    <aside class="profile-panel">
+      <div class="profile-top">
+        <span class="status-pill">Open to collaborate</span>
+        <div class="photo-wrap">
+          <img src="assets/profile-placeholder.svg" alt="Profile placeholder for Chaitanya Kandekar" />
+        </div>
+        <div>
+          <p class="eyebrow">Computational Engineering</p>
+          <h1>Chaitanya Kandekar</h1>
+          <p class="role">Research Associate · Doctoral Researcher</p>
         </div>
       </div>
-      <div>
-        <div class="eyebrow">Computational Engineering · Helmut-Schmidt University</div>
-        <h1>Advanced computational mechanics for fracture and multiphysics coupling</h1>
-        <p class="lead">
-          I am a research associate and doctoral researcher working on phase-field fracture, electro-chemo-mechanical and
-          thermo-hydro-mechanical coupling, and partitioned simulation frameworks for demanding engineering problems.
+
+      <div class="contact-stack">
+        <a href="mailto:kandekarchaitanya@gmail.com">kandekarchaitanya@gmail.com</a>
+        <a href="linkedin/">LinkedIn</a>
+        <a href="orcid/">ORCID · 0000-0002-1873-3056</a>
+        <a href="scholar/">Google Scholar</a>
+        <span>Hamburg, Germany</span>
+      </div>
+
+      <nav class="side-nav" aria-label="Section navigation">
+        <a href="#summary">Summary</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Methods & Tools</a>
+        <a href="#publications">Selected Publications</a>
+        <a href="#talks">Conference Talks</a>
+        <a href="#contact">Links</a>
+      </nav>
+
+      <div class="side-actions">
+        <a class="button primary" href="cv/Chaitanya_Kandekar_CV.pdf">Download CV</a>
+        <a class="button secondary" href="scholar/">Full publication list</a>
+      </div>
+    </aside>
+
+    <main class="content-panel">
+      <section class="hero-card">
+        <p class="hero-kicker">Research profile</p>
+        <h2>Advanced computational mechanics for phase-field fracture and multiphysics coupling.</h2>
+        <p class="hero-lead">
+          I develop computational frameworks for damage, crack propagation, and coupled field problems,
+          with applications spanning stress corrosion cracking, concrete under fire, and partitioned simulation workflows.
         </p>
-
-        <div class="meta-grid">
-          <div class="meta-card">
-            <div class="label">Current Role</div>
-            <div class="value">Research Associate</div>
+        <div class="quick-facts">
+          <div class="fact-card">
+            <span class="fact-label">Current role</span>
+            <strong>Research Associate</strong>
           </div>
-          <div class="meta-card">
-            <div class="label">Doctoral Program</div>
-            <div class="value">Dr.-Ing. Computational Engineering</div>
+          <div class="fact-card">
+            <span class="fact-label">Affiliation</span>
+            <strong>Helmut-Schmidt University</strong>
           </div>
-          <div class="meta-card">
-            <div class="label">Key Tools</div>
-            <div class="value">FEniCS · preCICE · Abaqus UMAT</div>
+          <div class="fact-card">
+            <span class="fact-label">Core stack</span>
+            <strong>FEniCS · preCICE · Abaqus</strong>
           </div>
         </div>
+      </section>
 
-        <div class="actions">
-          <a class="btn primary" href="cv/Chaitanya_Kandekar_CV.pdf">Download CV</a>
-          <a class="btn" href="scholar/">Google Scholar</a>
-          <a class="btn" href="orcid/">ORCID</a>
-          <a class="btn" href="linkedin/">LinkedIn</a>
-          <a class="btn" href="mailto:kandekarchaitanya@gmail.com">Email</a>
+      <section class="section-block" id="summary">
+        <div class="section-heading">
+          <span class="section-index">01</span>
+          <div>
+            <h3>Summary</h3>
+            <p>Focused on computational fracture, multiphysics modelling, and reproducible scientific workflows.</p>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <div class="section-grid">
-      <section class="card" id="about">
-        <h2>About</h2>
-        <p>
-          My research focuses on how damage and fracture evolve in materials under coupled physical processes.
-          I develop computational frameworks that combine nonlinear finite element methods, partitioned solvers,
-          and multiscale thinking for applications such as stress corrosion cracking and concrete structures under fire.
-        </p>
-        <p>
-          I also teach tutorial sessions in continuum mechanics (in english) and MATLAB programming (in german), and I enjoy building clean,
-          reproducible simulation workflows that scale well from prototype studies to research-grade computations.
-        </p>
-        <div class="note small">
+        <div class="section-card prose">
+          <p>
+            My research investigates how damage and fracture evolve in materials under strongly coupled physical processes.
+            I work on phase-field formulations, nonlinear finite element methods, and partitioned coupling strategies that make large,
+            demanding simulations more reliable and easier to extend.
+          </p>
+          <p>
+            Alongside research, I teach tutorial sessions in continuum mechanics and MATLAB programming, and I enjoy building
+            simulation pipelines that stay clean from prototype studies to research-grade computation.
+          </p>
         </div>
       </section>
 
-      <section class="card" id="research">
-        <h2>Research Interests</h2>
-        <div class="chips">
-          <span class="chip">Phase-field fracture</span>
-          <span class="chip">Multiphysics coupling</span>
-          <span class="chip">Partitioned solvers</span>
-          <span class="chip">Finite element methods</span>
-          <span class="chip">Stress corrosion cracking</span>
-          <span class="chip">Concrete under fire</span>
-          <span class="chip">Scientific computing</span>
-          <span class="chip">preCICE workflows</span>
+      <section class="section-block" id="highlights">
+        <div class="section-heading">
+          <span class="section-index">02</span>
+          <div>
+            <h3>Highlights</h3>
+            <p>A slightly more eye-catching layer, while still keeping the page academic and clean.</p>
+          </div>
         </div>
-      </section>
-    </div>
-
-    <div class="split">
-      <section class="card">
-        <h2>Experience & Education</h2>
-        <div class="timeline-item">
-          <div class="item-title">Research Associate · Helmut-Schmidt University</div>
-          <div class="item-meta">Jun 2021 - present · KIBIDZ and ECoMaD projects</div>
-          <div>Thermo-hydro-mechanical fracture modelling for concrete under fire and electro-chemo-mechanical fracture modelling for stress corrosion cracking.</div>
-        </div>
-        <div class="timeline-item">
-          <div class="item-title">Dr.-Ing. in Computational Engineering</div>
-          <div class="item-meta">Jun 2021 - present · Grade 1.0</div>
-          <div>Thesis: Multi-physics and multi-scale computational frameworks for environment-induced phase-field fracture.</div>
-        </div>
-        <div class="timeline-item">
-          <div class="item-title">Master in Computational Methods in Engineering</div>
-          <div class="item-meta">Apr 2018 - May 2021 · Leibniz University Hannover · Grade 1.5</div>
-          <div>Thesis on electro-chemo-mechanically induced fracture at the electrode-catalyst interface of water electrolysis cells.</div>
-        </div>
-      </section>
-
-      <section class="card">
-        <h2>Technical Stack</h2>
-        <div class="chips">
-          <span class="chip">Python</span>
-          <span class="chip">MATLAB</span>
-          <span class="chip">Fortran</span>
-          <span class="chip">C</span>
-          <span class="chip">FEniCS</span>
-          <span class="chip">Abaqus UMAT</span>
-          <span class="chip">ANSYS</span>
-          <span class="chip">Gmsh</span>
-          <span class="chip">ParaView</span>
-          <span class="chip">HyperMesh</span>
-          <span class="chip">LaTeX</span>
-          <span class="chip">GitHub</span>
-        </div>
-      </section>
-    </div>
-
-    <section class="card" id="publications">
-      <h2>Selected Publications</h2>
-      <div class="pub-grid">
-        <article class="pub-card">
-          <div class="pub-year">2025</div>
-          <h3>An approach for a novel multiscale partitioned framework for predicting collapse of buildings under fire loads</h3>
-          <div class="pub-meta">FraMCoS-12</div>
-          <p class="small"><a href="https://framcos.org/FraMCoS-12/Full-Papers/1319.pdf">Read paper</a></p>
-        </article>
-        <article class="pub-card">
-          <div class="pub-year">2024</div>
-          <h3>Mastering the complex time-scale interaction during Stress Corrosion Cracking phenomena through an advanced coupling scheme</h3>
-          <div class="pub-meta">Computer Methods in Applied Mechanics and Engineering</div>
-          <p class="small"><a href="https://doi.org/10.1016/j.cma.2024.117101">DOI</a></p>
-        </article>
-        <article class="pub-card">
-          <div class="pub-year">2024</div>
-          <h3>Crack propagation in anisotropic brittle materials: From a phase-field model to a shape optimization approach</h3>
-          <div class="pub-meta">Engineering Fracture Mechanics</div>
-          <p class="small"><a href="https://doi.org/10.1016/j.engfracmech.2024.110065">DOI</a></p>
-        </article>
-        <article class="pub-card">
-          <div class="pub-year">2023</div>
-          <h3>Toward coupled fire-structure simulations for forecasting smoke leakage in case of concrete under fire</h3>
-          <div class="pub-meta">PAMM</div>
-          <p class="small"><a href="https://doi.org/10.1002/pamm.202300250">DOI</a></p>
-        </article>
-        <article class="pub-card">
-          <div class="pub-year">2023</div>
-          <h3>A partitioned computational framework for damage evolution in stress corrosion cracking utilizing phase-field</h3>
-          <div class="pub-meta">PAMM</div>
-          <p class="small"><a href="https://doi.org/10.1002/pamm.202200211">DOI</a></p>
-        </article>
-        <article class="pub-card">
-          <div class="pub-year">2022</div>
-          <h3>Electro-Chemo-Mechanical Induced Fracture Modeling in Proton Exchange Membrane Water Electrolysis for Sustainable Hydrogen Production</h3>
-          <div class="pub-meta">Computer Methods in Applied Mechanics and Engineering</div>
-          <p class="small"><a href="https://doi.org/10.1016/j.cma.2022.115580">DOI</a></p>
-        </article>
-      </div>
-    </section>
-
-    <div class="split">
-      <section class="card" id="talks">
-        <h2>Recent Conference Presentations</h2>
-        <div class="talk-grid">
-          <article class="talk-card">
-            <h3>Computational framework for coupled simulations of concrete structures under fire loads</h3>
-            <div class="talk-meta">IBB 2025 · Bad Ball, Germany</div>
+        <div class="spotlight-grid">
+          <article class="spotlight-card">
+            <span class="mini-label">Current focus</span>
+            <h4>Phase-field fracture in challenging coupled environments</h4>
+            <p>Electro-chemo-mechanical and thermo-hydro-mechanical settings for realistic crack evolution studies.</p>
           </article>
-          <article class="talk-card">
-            <h3>An approach for a novel multiscale partitioned framework for predicting collapse of buildings under fire loads</h3>
-            <div class="talk-meta">COMPLAS 2025 · Barcelona, Spain</div>
+          <article class="spotlight-card">
+            <span class="mini-label">Workflow strength</span>
+            <h4>Partitioned simulation frameworks</h4>
+            <p>Coupling specialized solvers to handle multi-scale and multi-physics behavior with flexibility.</p>
           </article>
-          <article class="talk-card">
-            <h3>A partitioned computational framework for exploiting damage in stress corrosion cracking of metal matrix composite using phase-field method</h3>
-            <div class="talk-meta">ICDM 2025 · Singapore</div>
-          </article>
-          <article class="talk-card">
-            <h3>On a hybrid simulation using a phase-field approach for predicting the concrete behavior under fire</h3>
-            <div class="talk-meta">ESMC 2025 · Lyon, France</div>
+          <article class="spotlight-card">
+            <span class="mini-label">Applications</span>
+            <h4>Hydrogen systems and concrete under fire</h4>
+            <p>Engineering-focused research with high computational demands and practical relevance.</p>
           </article>
         </div>
       </section>
 
-      <section class="card" id="contact">
-        <h2>Contact</h2>
-        <div class="contact-list">
-          <p><strong>Email:</strong> <a href="mailto:kandekarchaitanya@gmail.com">kandekarchaitanya@gmail.com</a></p>
-          <p><strong>LinkedIn:</strong> <a href="linkedin/">chaitanya-kandekar</a></p>
-          <p><strong>Google Scholar:</strong> <a href="scholar/">Scholar profile</a></p>
-          <p><strong>ORCID:</strong> <a href="orcid/">0000-0002-1873-3056</a></p>
-          <p><strong>Location:</strong> Hamburg, Germany</p>
+      <section class="section-block" id="experience">
+        <div class="section-heading">
+          <span class="section-index">03</span>
+          <div>
+            <h3>Experience & education</h3>
+            <p>A timeline layout inspired by modern one-page portfolio templates.</p>
+          </div>
         </div>
-        <p class="small" style="margin-top:16px; color: var(--muted);">
-        </p>
+        <div class="timeline-list">
+          <article class="timeline-card">
+            <div class="timeline-meta">Jun 2021 – Present</div>
+            <h4>Research Associate · Helmut-Schmidt University</h4>
+            <p>Working on thermo-hydro-mechanical fracture modelling for concrete under fire and electro-chemo-mechanical fracture modelling for stress corrosion cracking.</p>
+          </article>
+          <article class="timeline-card">
+            <div class="timeline-meta">Jun 2021 – Present</div>
+            <h4>Dr.-Ing. in Computational Engineering</h4>
+            <p>Thesis: multi-physics and multi-scale computational frameworks for environment-induced phase-field fracture.</p>
+          </article>
+          <article class="timeline-card">
+            <div class="timeline-meta">Apr 2018 – May 2021</div>
+            <h4>Master in Computational Methods in Engineering · Leibniz University Hannover</h4>
+            <p>Thesis on electro-chemo-mechanically induced fracture at the electrode-catalyst interface of water electrolysis cells.</p>
+          </article>
+        </div>
       </section>
-    </div>
 
-    <footer class="footer">© 2026 Chaitanya Kandekar · Built for GitHub Pages</footer>
+      <section class="section-block" id="skills">
+        <div class="section-heading">
+          <span class="section-index">04</span>
+          <div>
+            <h3>Methods & tools</h3>
+            <p>Core themes, software, and research tooling.</p>
+          </div>
+        </div>
+        <div class="tag-groups">
+          <div class="group-card">
+            <h4>Research themes</h4>
+            <div class="tags">
+              <span>Phase-field fracture</span>
+              <span>Multiphysics coupling</span>
+              <span>Partitioned solvers</span>
+              <span>Finite element methods</span>
+              <span>Stress corrosion cracking</span>
+              <span>Concrete under fire</span>
+            </div>
+          </div>
+          <div class="group-card">
+            <h4>Technical stack</h4>
+            <div class="tags">
+              <span>Python</span>
+              <span>MATLAB</span>
+              <span>Fortran</span>
+              <span>C</span>
+              <span>FEniCS</span>
+              <span>preCICE</span>
+              <span>Abaqus UMAT</span>
+              <span>ANSYS</span>
+              <span>Gmsh</span>
+              <span>ParaView</span>
+              <span>HyperMesh</span>
+              <span>LaTeX</span>
+              <span>GitHub</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-block" id="publications">
+        <div class="section-heading">
+          <span class="section-index">05</span>
+          <div>
+            <h3>Selected publications</h3>
+            <p>Highlighted papers with quick links, plus a direct route to the full Scholar list.</p>
+          </div>
+        </div>
+        <div class="pub-list">
+          <article class="pub-item featured">
+            <div class="pub-topline">
+              <span class="pub-year">2024</span>
+              <span class="pub-badge">Journal article</span>
+            </div>
+            <h4>Mastering the complex time-scale interaction during Stress Corrosion Cracking phenomena through an advanced coupling scheme</h4>
+            <p>Computer Methods in Applied Mechanics and Engineering</p>
+            <div class="link-row">
+              <a href="https://doi.org/10.1016/j.cma.2024.117101">DOI</a>
+            </div>
+          </article>
+          <article class="pub-item">
+            <div class="pub-topline">
+              <span class="pub-year">2024</span>
+              <span class="pub-badge">Journal article</span>
+            </div>
+            <h4>Crack propagation in anisotropic brittle materials: From a phase-field model to a shape optimization approach</h4>
+            <p>Engineering Fracture Mechanics</p>
+            <div class="link-row">
+              <a href="https://doi.org/10.1016/j.engfracmech.2024.110065">DOI</a>
+            </div>
+          </article>
+          <article class="pub-item">
+            <div class="pub-topline">
+              <span class="pub-year">2025</span>
+              <span class="pub-badge">Conference paper</span>
+            </div>
+            <h4>An approach for a novel multiscale partitioned framework for predicting collapse of buildings under fire loads</h4>
+            <p>FraMCoS-12</p>
+            <div class="link-row">
+              <a href="https://framcos.org/FraMCoS-12/Full-Papers/1319.pdf">Read paper</a>
+            </div>
+          </article>
+          <article class="pub-item">
+            <div class="pub-topline">
+              <span class="pub-year">2023</span>
+              <span class="pub-badge">Conference paper</span>
+            </div>
+            <h4>Toward coupled fire-structure simulations for forecasting smoke leakage in case of concrete under fire</h4>
+            <p>PAMM</p>
+            <div class="link-row">
+              <a href="https://doi.org/10.1002/pamm.202300250">DOI</a>
+            </div>
+          </article>
+          <article class="pub-item">
+            <div class="pub-topline">
+              <span class="pub-year">2023</span>
+              <span class="pub-badge">Conference paper</span>
+            </div>
+            <h4>A partitioned computational framework for damage evolution in stress corrosion cracking utilizing phase-field</h4>
+            <p>PAMM</p>
+            <div class="link-row">
+              <a href="https://doi.org/10.1002/pamm.202200211">DOI</a>
+            </div>
+          </article>
+          <article class="pub-item">
+            <div class="pub-topline">
+              <span class="pub-year">2022</span>
+              <span class="pub-badge">Journal article</span>
+            </div>
+            <h4>Electro-Chemo-Mechanical Induced Fracture Modeling in Proton Exchange Membrane Water Electrolysis for Sustainable Hydrogen Production</h4>
+            <p>Computer Methods in Applied Mechanics and Engineering</p>
+            <div class="link-row">
+              <a href="https://doi.org/10.1016/j.cma.2022.115580">DOI</a>
+            </div>
+          </article>
+        </div>
+        <p class="foot-link"><a href="scholar/">View full publication list on Google Scholar</a></p>
+      </section>
+
+      <section class="section-block" id="talks">
+        <div class="section-heading">
+          <span class="section-index">06</span>
+          <div>
+            <h3>Conference talks</h3>
+            <p>Structured as clean cards, so you can keep adding more later without the page feeling crowded.</p>
+          </div>
+        </div>
+        <div class="talks-grid">
+          <article class="talk-item">
+            <h4>Computational framework for coupled simulations of concrete structures under fire loads</h4>
+            <p>IBB 2025 · Bad Ball, Germany</p>
+          </article>
+          <article class="talk-item">
+            <h4>An approach for a novel multiscale partitioned framework for predicting collapse of buildings under fire loads</h4>
+            <p>COMPLAS 2025 · Barcelona, Spain</p>
+          </article>
+          <article class="talk-item">
+            <h4>A partitioned computational framework for exploiting damage in stress corrosion cracking of metal matrix composite using phase-field method</h4>
+            <p>ICDM 2025 · Singapore</p>
+          </article>
+          <article class="talk-item">
+            <h4>On a hybrid simulation using a phase-field approach for predicting the concrete behavior under fire</h4>
+            <p>ESMC 2025 · Lyon, France</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block" id="contact">
+        <div class="section-heading">
+          <span class="section-index">07</span>
+          <div>
+            <h3>Links</h3>
+            <p>Simple and direct routes for contact and profile discovery.</p>
+          </div>
+        </div>
+        <div class="links-panel">
+          <a href="mailto:kandekarchaitanya@gmail.com">Email</a>
+          <a href="linkedin/">LinkedIn</a>
+          <a href="orcid/">ORCID</a>
+          <a href="scholar/">Google Scholar</a>
+          <a href="cv/Chaitanya_Kandekar_CV.pdf">Download CV</a>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>© 2026 Chaitanya Kandekar</span>
+        <span>Built for GitHub Pages</span>
+      </footer>
+    </main>
   </div>
 </body>
 </html>
