@@ -1,14 +1,17 @@
-Apex-inspired academic homepage for GitHub Pages
+Apex-clean academic homepage for GitHub Pages
 
-Files to edit most often:
-- index.html               -> content sections, publications, talks
-- styles.css               -> colors, spacing, typography
-- assets/profile-placeholder.svg -> replace with your own profile image if you want
-- cv/Chaitanya_Kandekar_CV.pdf   -> replace with a newer CV later if needed
+This version removes most block/card styling on the main content side and uses:
+- open whitespace
+- line separators
+- linear publication rows
+- linear talk rows
+- a cleaner CV / editorial rhythm
 
-This version is inspired by a modern one-page portfolio / resume layout:
-- left sticky profile panel
-- big hero statement
-- numbered sections
-- cleaner cards and tags
-- improved light/dark theme
+Main files:
+- index.html
+- styles.css
+- assets/theme.js
+
+Quick edits:
+- Photo size: .photo-wrap in styles.css
+- Hero title size: .hero h2 in styles.css

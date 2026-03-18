@@ -20,15 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const links = Array.from(document.querySelectorAll('.side-nav a'));
-  const sections = links
-    .map(link => document.querySelector(link.getAttribute('href')))
-    .filter(Boolean);
+  const sections = links.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
 
   const observer = new IntersectionObserver((entries) => {
-    const visible = entries
-      .filter(entry => entry.isIntersecting)
-      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-
+    const visible = entries.filter(e => e.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
     if (!visible) return;
     const id = '#' + visible.target.id;
     links.forEach(link => link.classList.toggle('active', link.getAttribute('href') === id));
